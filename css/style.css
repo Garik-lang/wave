@@ -16,7 +16,7 @@
 
 
 body{
-    width: 1110px;
+    max-width: 1110px;
     margin-top: 34px;
     margin-bottom: 141px;
 }
