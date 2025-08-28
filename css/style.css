@@ -17,6 +17,8 @@
 
 body{
     max-width: 1110px;
+    display: block;
+    justify-self: anchor-center;
     margin-top: 34px;
     margin-bottom: 141px;
 }
