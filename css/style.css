@@ -32,7 +32,7 @@
 :root{
     --color--black:#121723;
     --color--light--black:#292E39;
-    --text--grey: #D2D5DD;
+    --text--grey: #A1A6B4;
     --shady--gray:#DFE1E5;
     --promo--color--shade:#BB973E;
     --promo--color:#F0D288;
@@ -170,6 +170,52 @@ a:hover{
 
 
 .podcasts{
-    background-color: var(--text--grey);
-    min-width: 100vw;
+    background-color: var(--gray--light);
+    
+}
+
+.pod-h2{
+    font-family: 'Muller';
+    font-size: xx-large;
+    font-weight: 600;
+    color: var(--color--black);
+}
+
+
+.pod-item-list{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+}
+
+
+.pod-list-item{
+    background-color: var(--color--white);
+    width: 540px;
+    height: 140px;
+}
+
+.pod-art{
+    display: flex;
+}
+
+
+.pod-div{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding-left: 30px;
+}
+
+.pod-span{
+    padding-bottom: 8px;
+}
+
+.pod-h3{
+   margin: 0px;
+}
+
+.pod-p{
+   margin: 0px;
+   color: var(--text--grey);
 }
