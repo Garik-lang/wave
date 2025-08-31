@@ -68,9 +68,6 @@ ul{
     padding-inline-start: 0;
 }
 
-button{
-    border: none;
-}
 
 
 
@@ -141,6 +138,7 @@ a:hover{
    padding: 20px 37px;
    border-radius: 40px;
    cursor: pointer;
+   border: none;
    background-color: var(--color--primary);
    color: var(--color--white);
    transition: 0.2s;
@@ -252,11 +250,19 @@ a:hover{
 
 .tra-button{
     max-width: 160px;
+    max-height: 40px;
+    padding: 12px 56px;
+    border-radius: 40px;
+    cursor: pointer;
+    background-color: var(--color--white);
+    border-color: var(--color--black);
 }
 
 .tra-div-2{
     display: flex;
-    flex-direction: row-reverse;
+    justify-content: end;
+    width: 825px;
+    height: 550px;
 }
 
 
@@ -267,34 +273,43 @@ a:hover{
     gap: 30px;
 }
 
-.tra-cart:nth-child(1){
-    background-image: url(/images/people\ book.svg);
-    background-repeat: no-repeat;
+.tra-cart-list{
+    width: 255px;
+    height: 260px;
+    border-color: var(--text--grey);
 }
 
-.tra-cart:nth-child(2){
-    background-image: url(/images/td.svg);
-    background-repeat: no-repeat;
+.tra-cart-div{
+    margin-left: 16px;
 }
 
-.tra-cart:nth-child(3){
-    background-image: url(/images/rim.svg);
-    background-repeat: no-repeat;
+.tra-h3{
+    margin-bottom: 0px;
 }
 
-.tra-cart:nth-child(4){
-    background-image: url(/images/erudit.png);
-    background-repeat: no-repeat;
+.tra-p{
+    margin-bottom: 20px;
+    margin-top: 4px;
+    color: var(--text--grey);
 }
 
-.tra-cart:nth-child(5){
-    background-image: url(/images/dar.svg);
-    background-repeat: no-repeat;
+.tra-svg{
+    margin-left: 16px;
+    transition: 0.2s;
 }
 
-.tra-cart:nth-child(6){
-    background-image: url(/images/minde.svg);
-    background-repeat: no-repeat;
+.tra-svg:hover{
+    fill: var(--color--primary);
+    cursor: pointer;
+}
+
+.tra-svg:focus-visible{
+    background-color: var(--primary--light);
+    fill: var(--color--white);
+}
+
+.tra-svg:active{
+   fill: var(--primary--shade);
 }
 
 
