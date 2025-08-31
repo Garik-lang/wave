@@ -219,3 +219,94 @@ a:hover{
    margin: 0px;
    color: var(--text--grey);
 }
+
+
+
+/*transfers*/
+
+#transfers{
+    display: flex;
+    flex-direction: column;
+    height: 752px;
+}
+
+.trans-h2{
+    font-family: 'Muller';
+    font-size: xx-large;
+    font-weight: 600;
+    color: var(--color--black);
+}
+
+
+.tra-div{
+  display: flex;
+  flex-direction: column;
+   
+    
+}
+
+.microphone{
+    width: 65px;
+    height: 89px;
+}
+
+.tra-button{
+    max-width: 160px;
+}
+
+.tra-div-2{
+    display: flex;
+    flex-direction: row-reverse;
+}
+
+
+.tra-cart{
+    position: relative;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+}
+
+.tra-cart:nth-child(1){
+    background-image: url(/images/people\ book.svg);
+    background-repeat: no-repeat;
+}
+
+.tra-cart:nth-child(2){
+    background-image: url(/images/td.svg);
+    background-repeat: no-repeat;
+}
+
+.tra-cart:nth-child(3){
+    background-image: url(/images/rim.svg);
+    background-repeat: no-repeat;
+}
+
+.tra-cart:nth-child(4){
+    background-image: url(/images/erudit.png);
+    background-repeat: no-repeat;
+}
+
+.tra-cart:nth-child(5){
+    background-image: url(/images/dar.svg);
+    background-repeat: no-repeat;
+}
+
+.tra-cart:nth-child(6){
+    background-image: url(/images/minde.svg);
+    background-repeat: no-repeat;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
