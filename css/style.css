@@ -68,7 +68,9 @@ ul{
     padding-inline-start: 0;
 }
 
-
+p{
+    color: var(--text--grey);
+}
 
 
 /*header*/
@@ -218,14 +220,16 @@ a:hover{
    color: var(--text--grey);
 }
 
-
-
 /*transfers*/
 
 #transfers{
     display: flex;
-    flex-direction: column;
+    flex-wrap: wrap;
     height: 752px;
+}
+
+.trans-div{
+    display: flex;
 }
 
 .trans-h2{
@@ -239,8 +243,6 @@ a:hover{
 .tra-div{
   display: flex;
   flex-direction: column;
-   
-    
 }
 
 .microphone{
@@ -316,7 +318,7 @@ a:hover{
 
 #guests{
     margin-top: 94px;
-    background-color: var(--color--light--black);
+    background-color: var(--color--black);
 }
 
 .gues-div{
@@ -376,4 +378,59 @@ a:hover{
     background-color: var(--color--light--black);
     color: var(--primary--light);
     border-color: var(--primary--light);
+}
+
+
+/*playlists*/
+
+.playlists-div{
+    display: flex;
+}
+
+.playl-div{
+    display: flex;
+    flex-direction: column;
+}
+
+.play-h2{
+    font-family: 'Muller';
+    font-size: xx-large;
+    font-weight: 500;
+    color: var(--color--black);
+    margin-bottom: 0px;
+}
+
+.play-p{
+    max-width: 362px;
+    margin-top: 12px;
+    margin-right: 30px;
+    color: var(--text--grey);
+}
+
+.play-span{
+    color: var(--text--grey);
+    margin-top: -10px;
+    margin-bottom: 6.68px;
+}
+
+.play-item{
+    display: flex;
+    justify-content: end;
+    flex-wrap: wrap;
+    border-color: var(--text--grey);
+    gap: 30px;
+}
+
+.play-list{
+    width: 160px;
+    height: 224px;
+}
+
+.play-img{
+    width: 160px;
+    height: 160px;
+}
+
+.play-text{
+    padding-left: 16px;
 }
