@@ -47,6 +47,7 @@
 
 
 body{
+    font-family: 'Muller';
     max-width: 1110px;
     display: block;
     justify-self: anchor-center;
@@ -54,6 +55,10 @@ body{
     margin-bottom: 141px;
 }
 
+section{
+    padding-top: 94px;
+    padding-bottom: 94px;
+}
 
 li{
     list-style: none;
@@ -67,11 +72,6 @@ ul{
     list-style-type: none;
     padding-inline-start: 0;
 }
-
-p{
-    color: var(--text--grey);
-}
-
 
 /*header*/
 
@@ -320,11 +320,6 @@ a:hover{
     background-color: var(--color--black);
 }
 
-.gues-div{
-    padding-top: 94px;
-    padding-bottom: 94px;
-}
-
 .gue-h2{
     margin-top: 0px;
     font-family: 'Muller';
@@ -432,4 +427,74 @@ a:hover{
 
 .play-text{
     padding-left: 16px;
+}
+
+.play-p2{
+    color: var(--text--grey);
+}
+
+/*WAVE-radio*/
+
+.wave-radio{
+    display: flex;
+    background-color: var(--color--light--black);
+}
+
+.radio{
+    display: flex;
+    flex-direction: column;
+    padding-left: 30px;
+}
+
+.radio-h2{
+    max-width: 327px;
+    margin-bottom: 19px;
+    font-family: 'Muller';
+    font-size: xxx-large;
+    font-weight: 500;
+    color: var(--promo--color);
+}
+
+.rad-p{
+    color: var(--color--white);
+    font-family: '';
+    max-width: 399px;
+    margin-bottom: 0px;
+    margin-top: 13px;
+}
+
+.rad-span{
+    margin-top: 30px;
+    margin-bottom: 30px;
+    font-size: xx-large;
+    color: var(--color--white);
+}
+
+.rad-buttom{
+    display: flex;
+    justify-content: center;
+    padding: 15px 5.5px;
+    max-width: 255px;
+    background-color: var(--color--light--black);
+    border-radius: 25px;
+    border-color: var(--promo--color);
+    color: var(--promo--color);
+    gap: 8px;
+}
+
+.rad-buttom:hover{
+    cursor: pointer;
+    background-color: var(--promo--color);
+    color: var(--color--black);
+}
+
+
+.rad-buttom:focus-visible{
+    background-color: var(--promo--color--shade);
+    color: var(--color--black);
+}
+
+.rad-buttom:active{
+    background-color: var(--promo--color--shade);
+    color: var(--color--black);
 }
