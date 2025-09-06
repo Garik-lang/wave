@@ -169,9 +169,8 @@ a:hover{
 /*podcasts*/
 
 
-.podcasts{
+#podcasts{
     background-color: var(--gray--light);
-    
 }
 
 .pod-h2{
