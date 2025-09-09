@@ -498,3 +498,206 @@ a:hover{
     background-color: var(--promo--color--shade);
     color: var(--color--black);
 }
+
+/*aboutus*/
+
+#aboutus{
+    background-color: var(--color--black);
+}
+
+.about-div{
+    display: flex;
+    gap: 31px;
+}
+
+.abou-div{
+    max-width: 488px;
+}
+
+.abot-h2{
+    margin-top: 0px;
+    margin-bottom: 12px;
+    font-family: 'Muller';
+    font-size: xxx-large;
+    font-weight: 500;
+    color: var(--color--white);
+}
+
+.about-p{
+    margin-bottom: 8px;
+    font-weight: 600;
+    color: var(--text--grey);
+}
+
+.about-p1{
+    margin-top: 0px;
+    color: var(--text--grey);
+}
+
+.about-svg{
+    display: flex;
+    gap: 30px;
+}
+
+.satellites-item{
+    display: flex;
+    img{
+        width: 255px;
+        height: 255px;
+    }
+    h4{
+        margin-bottom: 0px;
+        color: var(--color--white);
+    }
+    p{
+        margin-top: 8px;
+        color: var(--text--grey);
+    }
+}
+
+.sate-label{
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    padding: 0;
+    margin: -1px;
+    overflow: hidden;
+    clip: rect(0, 0, 0, 0);
+    white-space: nowrap;
+    border: 0;
+}
+
+.sate-input{
+    font-weight: 600;
+    background-color: var(--color--black);
+    border-radius: 35px;
+    border-color: var(--text--grey);
+    color: var(--text--grey);
+    padding: 30px 669px 100px 32px;
+    transition: 0.2s;
+}
+
+.sate-input:hover, .sate-inf:hover{
+    background-color: var(--color--light--black);
+}
+
+.sate-input:focus-visible, .sate-inf:focus-visible{
+    background-color: var(--color--light--black);
+    border-color: var(--primary--light);
+}
+
+.sate-input:not(:placeholder-shown), .sate-inf:not(:placeholder-shown){
+    color: var(--color--white);
+    border-color: var(--color--white);
+}
+
+.sate-div{
+    display: flex;
+    gap: 30px;
+    margin-top: 30px;
+}
+
+.sate-inf{
+    background-color: var(--color--black);
+    border-radius: 35px;
+    border-color: var(--text--grey);
+    color: var(--text--grey);
+    padding: 25px 205px 25px 32px;
+    transition: 0.2s;
+}
+
+.sate-button{
+    background-color: var(--color--primary);
+    color: var(--color--white);
+    border-radius: 25px;
+    padding: 19px 54px;
+    margin-top: 30px;
+    transition: 0.2s;
+}
+
+.sate-button:hover{
+    background-color: var(--primary--light);
+    cursor: pointer;
+}
+
+.sate-button:focus-visible{
+    background-color: var(--primary--light);
+    border-color: var(--primary--shade);
+}
+
+.sate-button:active{
+    background-color: var(--primary--shade);
+}
+
+.sate-chec{
+    display: flex;
+    justify-content: start;
+    gap: 8px;
+    p{
+        color: var(--color--white);
+    }
+}
+
+/*footer*/
+
+.main-footer{
+   background-color: var(--color--light--black);
+   display: flex;
+   justify-content: space-evenly;
+   padding-top: 94px;
+   height: 323px;
+}
+
+.footer-svg{
+    g path:hover{
+        fill: var(--color--primary);
+        cursor: pointer;
+    }
+    g path:focus-visible{
+        fill: var(--primary--light);
+    }
+    g path:active{
+        fill: var(--primary--shade);
+    }
+}
+
+.footer-svg1{
+    path:hover{
+        fill: var(--color--primary);
+        cursor: pointer;
+    }
+    path:focus-visible{
+        fill: var(--primary--light);
+    }
+    path:active{
+        fill: var(--primary--shade);
+    }
+}
+
+.mai-div{
+    margin-top: 40px;
+}
+
+.footer-div{
+    display: flex;
+    gap: 109px;
+    li{
+        padding-top: 20px;
+    }
+    a{
+        color: var(--color--white);
+    }
+}
+
+.footer-item{
+    a:hover{
+        color: var(--color--primary);
+    }
+    a:focus-visible{
+        background-color: var(--primary--light);
+        color: var(--color--black);
+    }
+    a:active{
+        color: var(--primary--shade);
+    }
+}
