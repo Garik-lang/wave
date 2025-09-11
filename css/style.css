@@ -95,6 +95,7 @@ ul{
     a{
         color: var(--color--black);
         transition: 0.2s;
+        font-size: 20px;
     }
 a:active{
   color: var(--primary--shade);
