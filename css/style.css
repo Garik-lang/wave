@@ -1,9 +1,9 @@
 
 @font-face{
     font-family: 'Muller';
-    src: local('MullerNarrow-Trial-Black'),
-      url(MullerNarrow-Trial-Black) format(woff),
-      url(MullerNarrow-Trial-Black) format(woff2);
+    src: local('fonnts.com-muller-bold'),
+      url(fonnts.com-muller-bold) format(woff),
+      url(fonnts.com-muller-bold) format(woff2);
     font-display: swap;
     font-weight: 400;
     font-style: normal;
@@ -11,9 +11,9 @@
 
 @font-face{
     font-family: 'Muller';
-    src: local('MullerNarrow-Trial-Medium'),
-      url(MullerNarrow-Trial-Medium) format(woff),
-      url(MullerNarrow-Trial-Medium) format(woff2);
+    src: local('fonnts.com-muller-medium'),
+      url(fonnts.com-muller-medium) format(woff),
+      url(fonnts.com-muller-medium) format(woff2);
     font-display: swap;
     font-weight: 600;
     font-style: normal;
@@ -21,9 +21,9 @@
 
 @font-face{
     font-family: 'Muller';
-    src: local('MullerNarrow-Trial-RegularItalic'),
-      url(MullerNarrow-Trial-RegularItalic) format(woff),
-      url(MullerNarrow-Trial-RegularItalic) format(woff2);
+    src: local('fonnts.com-muller-ultrablack'),
+      url(fonnts.com-muller-ultrablack) format(woff),
+      url(fonnts.com-muller-ultrablack) format(woff2);
     font-display: swap;
     font-weight: 800;
     font-style: italic;
@@ -48,11 +48,14 @@
 
 body{
     font-family: 'Muller';
-    max-width: 1110px;
     display: block;
     justify-self: anchor-center;
     margin-top: 34px;
-    margin-bottom: 141px;
+}
+
+.container{
+    max-width: 1110px;
+    margin: 0 auto;
 }
 
 section{
@@ -132,13 +135,15 @@ a:hover{
     max-width: 558px;
     margin-top: 0px;
     margin-bottom: 45px;
-
+    line-height: 150%;
 }
 
 .rip-button{
-    width: 206px;
+    width: 245px;
+    height: 70px;
    padding: 20px 37px;
    border-radius: 40px;
+   font-size: 20px;
    cursor: pointer;
    border: none;
    background-color: var(--color--primary);
@@ -189,6 +194,7 @@ a:hover{
 
 
 .pod-list-item{
+    position: relative;
     background-color: var(--color--white);
     width: 540px;
     height: 140px;
@@ -217,6 +223,11 @@ a:hover{
 .pod-p{
    margin: 0px;
    color: var(--text--grey);
+}
+
+.obsolut{
+    position: absolute;
+    bottom: 0px;
 }
 
 /*transfers*/
@@ -336,8 +347,10 @@ a:hover{
 }
 
 .gue-p2{
-    width: 593px;
+    width: 825px;
     color: var(--text--grey);
+    line-height: 160%;
+    font-size: 20px;
 }
 
 .gue-item{
@@ -363,17 +376,36 @@ a:hover{
     margin-top: 0px;
     max-width: 458px;
     color: var(--text--grey);
+    line-height: 180%;
 }
 
 .gue-button{
-    margin-top: 91px;
-    padding: 12px 19.5px;
+    width: 160px;
+    height: 40px;
+    margin-top: 56px;
+    padding: 10px 19.5px;
+    border: 1px solid;
     border-radius: 25px;
     background-color: var(--color--light--black);
     color: var(--primary--light);
     border-color: var(--primary--light);
 }
 
+.gue-button:hover{
+    background-color: var(--primary--light);
+    color: var(--color--white);
+    cursor: pointer;
+}
+
+.gue-button:focus-visible{
+    background-color: var(--color--primary);
+    color: var(--color--white);
+}
+
+.gue-button:active{
+    background-color: var(--primary--shade);
+    color: var(--color--white);
+}
 
 /*playlists*/
 
@@ -440,10 +472,15 @@ a:hover{
     background-color: var(--color--light--black);
 }
 
+.wave-div{
+    display: flex;
+}
+
 .radio{
     display: flex;
     flex-direction: column;
     padding-left: 30px;
+    margin-top: -45px;
 }
 
 .radio-h2{
@@ -457,10 +494,11 @@ a:hover{
 
 .rad-p{
     color: var(--color--white);
-    font-family: '';
+    font-family: 'Muller';
     max-width: 399px;
     margin-bottom: 0px;
     margin-top: 13px;
+    line-height: 180%;
 }
 
 .rad-span{
@@ -473,10 +511,12 @@ a:hover{
 .rad-buttom{
     display: flex;
     justify-content: center;
-    padding: 15px 5.5px;
-    max-width: 255px;
+    padding: 15px 13.5px;
+    max-width: 300px;
     background-color: var(--color--light--black);
+    border: 1px solid;
     border-radius: 25px;
+    font-size: 20px;
     border-color: var(--promo--color);
     color: var(--promo--color);
     gap: 8px;
@@ -497,6 +537,18 @@ a:hover{
 .rad-buttom:active{
     background-color: var(--promo--color--shade);
     color: var(--color--black);
+}
+
+.r-dio{
+    position: relative;
+    width: 640px;
+    height: 562px;
+}
+
+.new{
+    position: absolute;
+    width: 160px;
+    height: 160px;
 }
 
 /*aboutus*/
@@ -532,6 +584,7 @@ a:hover{
 .about-p1{
     margin-top: 0px;
     color: var(--text--grey);
+    line-height: 160%;
 }
 
 .about-svg{
@@ -646,6 +699,14 @@ a:hover{
    justify-content: space-evenly;
    padding-top: 94px;
    height: 323px;
+}
+
+.logo2{
+    padding-bottom: 20px;
+}
+
+.sayts{
+    gap: 21px;
 }
 
 .footer-svg{
