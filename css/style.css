@@ -180,8 +180,8 @@ a:hover{
 
 .pod-h2{
     font-family: 'Muller';
-    font-size: xx-large;
-    font-weight: 600;
+    font-weight: 500;
+    font-size: 48px;
     color: var(--color--black);
 }
 
@@ -244,8 +244,8 @@ a:hover{
 
 .trans-h2{
     font-family: 'Muller';
-    font-size: xx-large;
-    font-weight: 600;
+    font-weight: 500;
+    font-size: 48px;
     color: var(--color--black);
 }
 
@@ -334,8 +334,8 @@ a:hover{
 .gue-h2{
     margin-top: 0px;
     font-family: 'Muller';
-    font-size: xx-large;
     font-weight: 500;
+    font-size: 48px;
     color: var(--color--white);
     margin-bottom: 12px;
 }
@@ -420,8 +420,8 @@ a:hover{
 
 .play-h2{
     font-family: 'Muller';
-    font-size: xx-large;
     font-weight: 500;
+    font-size: 48px;
     color: var(--color--black);
     margin-bottom: 0px;
 }
@@ -487,8 +487,8 @@ a:hover{
     max-width: 327px;
     margin-bottom: 19px;
     font-family: 'Muller';
-    font-size: xxx-large;
     font-weight: 500;
+    font-size: 48px;
     color: var(--promo--color);
 }
 
@@ -570,8 +570,8 @@ a:hover{
     margin-top: 0px;
     margin-bottom: 12px;
     font-family: 'Muller';
-    font-size: xxx-large;
     font-weight: 500;
+    font-size: 48px;
     color: var(--color--white);
 }
 
