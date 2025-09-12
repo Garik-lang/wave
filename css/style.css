@@ -56,11 +56,6 @@ body{
     margin: 0 auto;
 }
 
-section{
-    padding-top: 94px;
-    padding-bottom: 94px;
-}
-
 li{
     list-style: none;
 }
@@ -111,6 +106,24 @@ a:hover{
 .poisk{
     margin-top: 15px;
     cursor: pointer;
+    path:hover{
+        stroke: var(--primary--light);
+        path2:hover{
+            stroke: var(--primary--light);
+        }
+    }
+    path:focus-visible{
+        stroke: var(--primary--light);
+        path2:focus-visible{
+            stroke: var(--primary--light);
+        }
+    }
+    path:active{
+        stroke: var(--primary--shade);
+        path2:active{
+            stroke: var(--primary--shade);
+        }
+    }
 }
 
 /*ripasitions*/
@@ -175,6 +188,8 @@ a:hover{
 
 #podcasts{
     background-color: var(--gray--light);
+    padding-top: 60px;
+    padding-bottom: 102px;
 }
 
 .pod-h2{
@@ -234,7 +249,8 @@ a:hover{
 #transfers{
     display: flex;
     flex-wrap: wrap;
-    height: 752px;
+    padding-top: 60px;
+    padding-bottom: 94px;
 }
 
 .trans-div{
@@ -254,6 +270,13 @@ a:hover{
   flex-direction: column;
 }
 
+.tra-d{
+    margin-top: 293px;
+    p{
+        color: var(--text--grey);
+    }
+}
+
 .microphone{
     width: 65px;
     height: 89px;
@@ -262,23 +285,41 @@ a:hover{
 .tra-button{
     max-width: 160px;
     max-height: 40px;
-    padding: 12px 56px;
+    padding: 8px 56px;
     border-radius: 40px;
     cursor: pointer;
     background-color: var(--color--white);
     border-color: var(--color--black);
+    transition: 0.2s;
+}
+
+.tra-button:hover{
+    background-color: var(--color--primary);
+    color: var(--color--white);
+}
+
+.tra-button:focus-visible{
+    background-color: var(--primary--light);
+    border-color: var(--color--primary);
+    color: var(--color--white);
+}
+
+.tra-button:active{
+    background-color: var(--primary--shade);
+    color: var(--color--white);
 }
 
 .tra-div-2{
+    margin-top: 45px;
+    margin-left: 30px;
     display: flex;
-    justify-content: end;
+    flex-basis: content;
     width: 825px;
     height: 550px;
 }
 
 
 .tra-cart{
-    position: relative;
     display: flex;
     flex-wrap: wrap;
     gap: 30px;
@@ -287,7 +328,7 @@ a:hover{
 .tra-cart-list{
     width: 255px;
     height: 260px;
-    border-color: var(--text--grey);
+    border: 1px solid var(--text--grey);
 }
 
 .tra-cart-div{
@@ -307,26 +348,35 @@ a:hover{
 .tra-svg{
     margin-left: 16px;
     transition: 0.2s;
-}
-
-.tra-svg:hover{
-    fill: var(--color--primary);
-    cursor: pointer;
-}
-
-.tra-svg:focus-visible{
-    background-color: var(--primary--light);
-    fill: var(--color--white);
-}
-
-.tra-svg:active{
-   fill: var(--primary--shade);
+    path:hover{
+        fill: var(--color--primary);
+        cursor: pointer;
+     path2:hover{
+       fill: var(--color--primary);
+       cursor: pointer;
+    }
+    }
+    path:focus-visible{
+      background-color: var(--primary--light);
+      fill: var(--color--white);
+     path2:focus-visible{
+      background-color: var(--primary--light);
+      fill: var(--color--white);
+    }
+    }
+    path:active{
+      fill: var(--primary--shade);
+     path2:active{
+      fill: var(--primary--shade);
+    }
+    }
 }
 
 /*guests*/
 
 #guests{
-    margin-top: 94px;
+    padding-top: 94px;
+    padding-bottom: 88px;
     background-color: var(--color--black);
 }
 
@@ -408,6 +458,11 @@ a:hover{
 
 /*playlists*/
 
+#playlists{
+    padding-top: 55px;
+    padding-bottom: 94px;
+}
+
 .playlists-div{
     display: flex;
 }
@@ -440,6 +495,15 @@ a:hover{
     line-height: 22px;
 }
 
+.eighteen{
+    width: 31.03px;
+    height: 33.39px;
+}
+
+.play-div{
+    padding-top: 44px;
+}
+
 .play-item{
     display: flex;
     justify-content: end;
@@ -451,6 +515,8 @@ a:hover{
 .play-list{
     width: 160px;
     height: 224px;
+    border: 1px solid var(--text--grey);
+    position: relative;
 }
 
 .play-img{
@@ -458,12 +524,25 @@ a:hover{
     height: 160px;
 }
 
+.play-img2{
+  position: absolute;
+  right: 0px;
+}
+
 .play-text{
     padding-left: 16px;
+    h3{
+    margin-bottom: 3px;
+    margin-top: 11px;
+    }
+    p{
+        margin-top: 0px;
+    }
 }
 
 .play-p2{
     color: var(--text--grey);
+    font-size: 14px;
 }
 
 /*WAVE-radio*/
@@ -471,6 +550,8 @@ a:hover{
 .wave-radio{
     display: flex;
     background-color: var(--color--light--black);
+    padding-top: 94px;
+    padding-bottom: 133px;
 }
 
 .wave-div{
@@ -556,11 +637,13 @@ a:hover{
 
 #aboutus{
     background-color: var(--color--black);
+    padding-top: 94px;
+    padding-bottom: 93px;
 }
 
 .about-div{
     display: flex;
-    gap: 31px;
+    gap: 115px;
 }
 
 .abou-div{
@@ -580,12 +663,17 @@ a:hover{
     margin-bottom: 8px;
     font-weight: 600;
     color: var(--text--grey);
+    line-height: 150%;
+    font-size: 20px;
+    width: 598px;
 }
 
 .about-p1{
     margin-top: 0px;
     color: var(--text--grey);
     line-height: 160%;
+    font-size: 20px;
+    width: 615px;
 }
 
 .about-svg{
@@ -624,6 +712,7 @@ a:hover{
 .sate-input{
     font-weight: 600;
     background-color: var(--color--black);
+    border: 1px solid;
     border-radius: 35px;
     border-color: var(--text--grey);
     color: var(--text--grey);
@@ -653,6 +742,7 @@ a:hover{
 
 .sate-inf{
     background-color: var(--color--black);
+    border: 1px solid;
     border-radius: 35px;
     border-color: var(--text--grey);
     color: var(--text--grey);
@@ -663,9 +753,11 @@ a:hover{
 .sate-button{
     background-color: var(--color--primary);
     color: var(--color--white);
+    border: none;
     border-radius: 25px;
     padding: 19px 54px;
     margin-top: 30px;
+    font-size: 20px;
     transition: 0.2s;
 }
 
@@ -698,19 +790,31 @@ a:hover{
    background-color: var(--color--light--black);
    display: flex;
    justify-content: space-evenly;
-   padding-top: 94px;
-   height: 323px;
+   padding-top: 55px;
+}
+
+.fo-div{
+    display: flex;
+    justify-content: space-around;
+}
+
+.alicadzev{
+    margin-top: 77px;
+    width: 100%;
+}
+
+.footer-p{
+    color: var(--text--grey);
+    display: flex;
+    justify-content: center;
 }
 
 .logo2{
     padding-bottom: 20px;
 }
 
-.sayts{
-    gap: 21px;
-}
-
 .footer-svg{
+    padding-left: 21px;
     g path:hover{
         fill: var(--color--primary);
         cursor: pointer;
@@ -724,6 +828,7 @@ a:hover{
 }
 
 .footer-svg1{
+    padding-left: 21px;
     path:hover{
         fill: var(--color--primary);
         cursor: pointer;
@@ -734,6 +839,19 @@ a:hover{
     path:active{
         fill: var(--primary--shade);
     }
+}
+
+.footer-svg2{
+    g path:hover{
+        fill: var(--color--primary);
+        cursor: pointer;
+    }
+    g path:focus-visible{
+        fill: var(--primary--light);
+    }
+    g path:active{
+        fill: var(--primary--shade);
+    } 
 }
 
 .mai-div{
