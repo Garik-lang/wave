@@ -106,23 +106,38 @@ a:hover{
 .poisk{
     margin-top: 15px;
     cursor: pointer;
-    path:hover{
-        stroke: var(--primary--light);
-        path2:hover{
-            stroke: var(--primary--light);
-        }
+    .a{
+        stroke: var(--color--primary);
     }
-    path:focus-visible{
-        stroke: var(--primary--light);
-        path2:focus-visible{
-            stroke: var(--primary--light);
-        }
+    .b{
+        stroke: var(--color--primary);
     }
-    path:active{
+}
+
+.poisk:hover{
+    .a{
+        stroke: var(--primary--light);
+    }
+    .b{
+        stroke: var(--primary--light);
+    }
+}
+
+.poisk:focus-visible{
+    .a{
+        stroke: var(--primary--light);
+    }
+    .b{
+        stroke: var(--primary--light);
+    }
+}
+
+.poisk:active{
+    .a{
         stroke: var(--primary--shade);
-        path2:active{
-            stroke: var(--primary--shade);
-        }
+    }
+    .b{
+        stroke: var(--primary--shade);
     }
 }
 
@@ -348,27 +363,40 @@ a:hover{
 .tra-svg{
     margin-left: 16px;
     transition: 0.2s;
-    path:hover{
+    cursor: pointer;
+    .text{
+        fill: var(--color--black);
+    }
+    .slack{
+        fill: var(--color--black);
+    }
+}
+
+.tra-svg:hover{
+    .text{
         fill: var(--color--primary);
-        cursor: pointer;
-     path2:hover{
-       fill: var(--color--primary);
-       cursor: pointer;
     }
+    .slack{
+        fill: var(--color--primary);
     }
-    path:focus-visible{
-      background-color: var(--primary--light);
-      fill: var(--color--white);
-     path2:focus-visible{
-      background-color: var(--primary--light);
-      fill: var(--color--white);
+}
+
+.tra-svg:focus-visible{
+    background-color: var(--primary--light);
+    .text{
+        fill: var(--color--white);
     }
+    .slack{
+        fill: var(--color--white);
     }
-    path:active{
-      fill: var(--primary--shade);
-     path2:active{
-      fill: var(--primary--shade);
+}
+
+.tra-svg:active{
+    .text{
+        fill: var(--primary--shade);
     }
+    .slack{
+        fill: var(--primary--shade);
     }
 }
 
@@ -602,23 +630,55 @@ a:hover{
     border-color: var(--promo--color);
     color: var(--promo--color);
     gap: 8px;
+    svg{
+        .back{
+            fill: var(--promo--color);
+        }
+        .lain{
+            fill: var(--color--black);
+        }
+    }
 }
 
 .rad-buttom:hover{
     cursor: pointer;
     background-color: var(--promo--color);
     color: var(--color--black);
+    svg{
+        .back{
+            fill: var(--color--black);
+        }
+        .lain{
+            fill: var(--promo--color);
+        }
+    }
 }
 
 
 .rad-buttom:focus-visible{
     background-color: var(--promo--color--shade);
     color: var(--color--black);
+    svg{
+        .back{
+            fill: var(--promo--color);
+        }
+        .lain{
+            fill: var(--color--black);
+        }
+    }
 }
 
 .rad-buttom:active{
     background-color: var(--promo--color--shade);
     color: var(--color--black);
+    svg{
+        .back{
+            fill: var(--color--black);
+        }
+        .lain{
+            fill: var(--promo--color--shade);
+        }
+    }
 }
 
 .r-dio{
@@ -732,6 +792,10 @@ a:hover{
 .sate-input:not(:placeholder-shown), .sate-inf:not(:placeholder-shown){
     color: var(--color--white);
     border-color: var(--color--white);
+}
+
+.sate-input:invalid, .sate-inf:invalid{
+    border-color: var(--color--red);
 }
 
 .sate-div{
