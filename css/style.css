@@ -141,6 +141,16 @@ a:hover{
     }
 }
 
+.header-2{
+    display: flex;
+    justify-content: space-around;
+}
+
+.cank{
+    display: flex;
+    justify-content: space-around;
+}
+
 /*ripasitions*/
 
 .ripasitions{
