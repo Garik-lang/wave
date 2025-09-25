@@ -571,14 +571,16 @@ a:hover{
   right: 0px;
 }
 
-.play-h3{
+.play-text2{
     padding-left: 16px;
+}
+
+.play-h3{
     margin-bottom: 3px;
     margin-top: 11px;
 }
 
 .play-p2{
-    padding-left: 16px;
     margin-top: 0px;
     color: var(--text--grey);
     font-size: 14px;
@@ -594,6 +596,7 @@ a:hover{
 }
 
 .wave-div{
+    position: relative;
     display: flex;
 }
 
@@ -693,7 +696,6 @@ a:hover{
 }
 
 .r-dio{
-    position: relative;
     width: 640px;
     height: 562px;
 }
@@ -754,7 +756,7 @@ a:hover{
 
 .satellites-item{
     display: flex;
-    img{
+    .sate-img{
         width: 255px;
         height: 255px;
     }
@@ -961,6 +963,9 @@ a:hover{
     .main-header-2{
        display: none;
     }
+    .sate-img2{
+        display: none;
+    }
 }
 
 @media(max-width: 1024px){
@@ -1030,7 +1035,55 @@ a:hover{
         height: 112px;
     }
     .play-list{
-        width: 255px;
+        width: 253px;
         height: 112px;
+    }
+    .play-text{
+        display: flex;
+    }
+    .play-text2{
+      padding-left: 10px;
+      padding-top: 20px;
+    }
+    .play-img2{
+        right: auto;
+    }
+    .r-dio{
+        width: 397px;
+        height: 400;
+    }
+    .new{
+        top: 105px;
+        width: 100px;
+        height: 100px;
+    }
+    .aliqadzev{
+        width: 350px;
+    }
+    .sate-img{
+        display: none;
+    }
+    .about-svg2{
+        display: none;
+    }
+    .sate-img2{
+        width: 397px;
+        height: 255px;
+    }
+    .satellites-item{
+        flex-wrap: wrap;
+        gap: 20px
+    }
+    .sate-input{
+        padding-right: 588px;
+    }
+    .sate-inf{
+        padding-right: 165px;
+    }
+}
+
+@media(max-width: 768px){
+    .container{
+        max-width: 540px;
     }
 }
