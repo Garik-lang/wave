@@ -607,6 +607,7 @@ a:hover{
     margin-top: -45px;
 }
 
+
 .radio-h2{
     max-width: 327px;
     margin-bottom: 19px;
@@ -959,6 +960,33 @@ a:hover{
     }
 }
 
+@media(max-width: 1100px){
+#alicadzev{
+    width: 300px;
+}
+.pod-list-item {
+    width: 499px;
+}
+.about-svg2{
+    width: 200px;
+}
+.about-svg3{
+    width: 200px;
+}
+.about-svg{
+    gap: 20px;
+}
+.tra-div-2{
+    width: 650px;
+    margin-top: 0px;
+} 
+.tra-d{
+    width: 227px;
+}
+}
+
+
+
 @media(min-width: 1025px){
     .main-header-2{
        display: none;
@@ -1057,7 +1085,7 @@ a:hover{
         width: 100px;
         height: 100px;
     }
-    .aliqadzev{
+    #aliqadzev{
         width: 350px;
     }
     .sate-img{
