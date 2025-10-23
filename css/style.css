@@ -982,6 +982,10 @@ a:hover{
 } 
 .tra-d{
     width: 227px;
+    margin-top: 535px;
+}
+#transfers {
+    padding-bottom: 40px;
 }
 }
 
@@ -1109,6 +1113,25 @@ a:hover{
         padding-right: 165px;
     }
 }
+
+@media(max-width: 910px){
+    .item-list{
+        gap: 80.25px;
+    }
+}
+
+@media(max-width: 810px){
+    .sate-input{
+        padding-right: 520px;
+    }
+    .sate-inf{
+        padding-right: 130px;
+    }
+    .tra-div-2{
+        width: 550px;
+    }
+}
+
 
 @media(max-width: 768px){
     .container{
