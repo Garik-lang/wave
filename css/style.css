@@ -1116,7 +1116,7 @@ a:hover{
 
 @media(max-width: 910px){
     .item-list{
-        gap: 80.25px;
+        gap: 65.25px;
     }
 }
 
@@ -1133,8 +1133,45 @@ a:hover{
 }
 
 
-@media(max-width: 768px){
+@media(min-width: 805px){
+    #transfers2{
+        display: none;
+    }
+}
+
+
+
+@media(max-width: 805px){
+    #transfers{
+        display: none;
+    }
+}
+
+
+@media(max-width: 793px){
     .container{
         max-width: 540px;
+    }
+    .rip-img{
+        display: none;
+    }
+    .wave-div{
+        flex-direction: column;
+    }
+    .about-div{
+        flex-direction: column;
+        gap: 0px;
+    }
+    .sate-div{
+        flex-direction: column;
+    }
+    .sate-input{
+        padding-right: 312px;
+    }
+    .play-p{
+        width: 476px;
+    }
+    .tra-cart-list{
+        width: 253px;
     }
 }
