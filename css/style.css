@@ -1174,4 +1174,20 @@ a:hover{
     .tra-cart-list{
         width: 253px;
     }
+    .item-list{
+        margin-right: 90px;
+    }
+    .pod-list-item{
+        width: 540px;
+    }
+    .tra2-h2{
+        font-size: 35px;
+        font-weight: 500;
+    }
+    .microphone2{
+        display: flex;
+    }
+    .tra-button{
+        margin-left: 15px;
+    } 
 }
