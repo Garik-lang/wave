@@ -1139,6 +1139,12 @@ a:hover{
     }
 }
 
+@media (max-width: 800px){
+    .about-div{
+        flex-direction: column;
+        gap: 0px;
+    }
+}
 
 
 @media(max-width: 805px){
@@ -1147,8 +1153,16 @@ a:hover{
     }
 }
 
+@media (max-width: 820px){
+    .tra-div-2{
+      width: 550px;
+    }
+}
 
-@media(max-width: 793px){
+
+
+
+@media(max-width: 805px){
     .container{
         max-width: 540px;
     }
@@ -1158,15 +1172,42 @@ a:hover{
     .wave-div{
         flex-direction: column;
     }
-    .about-div{
-        flex-direction: column;
-        gap: 0px;
-    }
     .sate-div{
         flex-direction: column;
     }
     .sate-input{
         padding-right: 312px;
+    }
+    .gue-list {
+        flex-direction: column;
+    }
+    .gue-div{
+        margin-left: 0px;
+    }
+    .r-dio {
+        width: 540px;
+        height: 474px;
+    }
+    .new{
+        top: 0px;
+        width: 160px;
+        height: 160px;
+    }
+    .wave-radio {
+        padding-top: 54px;
+    }
+    .radio-h2 {
+        padding-top: 50px;
+    }
+    #aliqadzev{
+        width: 539px;
+        height: 20px;
+    }
+    .rad-p {
+        max-width: 475px;
+    }
+    .gue-p3{
+        max-width: 345px;
     }
     .play-p{
         width: 476px;
@@ -1186,8 +1227,14 @@ a:hover{
     }
     .microphone2{
         display: flex;
+        justify-content: center;
     }
     .tra-button{
-        margin-left: 15px;
+        margin-left: 20px;
     } 
+    .tra-text{
+        width: 267px;
+        margin-left: 20px;
+        color: var(--text--grey);
+    }
 }
