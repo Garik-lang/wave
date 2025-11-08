@@ -1048,7 +1048,7 @@ a:hover{
         }
     }
     .tra-d{
-        margin-top: 575px
+        margin-top: 531px
     }
     .gue-p2{
         width: 513px;
@@ -1133,9 +1133,16 @@ a:hover{
 }
 
 
-@media(min-width: 805px){
+@media(min-width: 890px){
     #transfers2{
         display: none;
+    }
+}
+
+@media (max-width: 890px){
+    .item-list{
+        gap: 46px;
+        margin-right: 162px;
     }
 }
 
@@ -1147,7 +1154,7 @@ a:hover{
 }
 
 
-@media(max-width: 805px){
+@media(max-width: 890px){
     #transfers{
         display: none;
     }
@@ -1167,7 +1174,7 @@ a:hover{
 
 
 
-@media(max-width: 808px){
+@media(max-width: 890px){
     .container{
         max-width: 540px;
     }
@@ -1219,9 +1226,6 @@ a:hover{
     }
     .tra-cart-list{
         width: 253px;
-    }
-    .item-list{
-        margin-right: 90px;
     }
     .pod-list-item{
         width: 540px;
