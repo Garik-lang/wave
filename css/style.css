@@ -1008,14 +1008,16 @@ a:hover{
         display: none;
     }
     .cank{
-         justify-content: end;
+         justify-content: center;
          border: 1px solid var(--text--grey);
          margin-top: 33px;
+
     }
     .item-list{
         display: flex;
         justify-content: space-between;
-        gap: 105.25px;
+        gap: 83.25ppx;
+        margin-left: 132px;
     }
     .ripasitions{
         margin-top: 90px;
@@ -1142,7 +1144,10 @@ a:hover{
 @media (max-width: 890px){
     .item-list{
         gap: 46px;
-        margin-right: 162px;
+        display: flex;
+        justify-content: center;
+        margin-right: 0px;
+        margin-left: 0px;
     }
 }
 
@@ -1280,3 +1285,26 @@ a:hover{
       margin-top: 60px;
     }
 }
+
+@media(max-width: 685px){
+    .about-p1 {
+        width: 547px;
+    }
+    .about-p {
+        width: 519px;
+    }
+}
+
+@media(max-width: 598px){
+    .container{
+        max-width: 256px;
+    }
+    .header-2{
+        margin-left: 0px;
+        margin-right: 0px;
+        width: 256px;
+    }
+    .poisk{
+        margin-top: 2px;
+    }
+}    
