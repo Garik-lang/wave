@@ -1295,11 +1295,17 @@ a:hover{
     }
 }
 
+@media(min-width: 598px){
+    .main-footer2{
+        display: none;
+    }
+}
+
 @media(max-width: 598px){
     .container{
         max-width: 356px;
     }
-    a{
+    .item-list{
         font-size: 15px !important;
     }
     .poisk{
@@ -1352,6 +1358,9 @@ a:hover{
         display: flex;
         flex-direction: column-reverse;
         height: 95px;
+    }
+    .transfers.h2{
+        font-size: 35px !important;
     }
     .tra-button{
         max-width: 110px;
@@ -1477,5 +1486,78 @@ a:hover{
     }
     .sate-button{
         font-size: 16px;
+    }
+    .main-footer{
+        display: none;
+    }
+    .footer-div1{
+        background-color: var(--color--light--black);
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .footer-svg{
+        width: 36px;
+        height: 36px;
+    }
+    .sayts2{
+        padding-bottom: 54px;
+    }
+    .footer-svg1{
+        width: 36px;
+        height: 36px;
+    }
+    .footer-svg2{
+        width: 36px;
+        height: 36px;
+    }
+    .logo2{
+        width: 190px;
+    }
+    .mai-div2{
+        padding-top: 54px;
+    }
+    .footer-div2{
+        background-color: var(--color--black);
+    }
+    .footer-item{
+        margin: 0px;
+            a{
+                font-size: 19px;
+            }
+        display: flex;
+        gap: 78px;
+    }
+    .lincs{
+        padding-top: 30px;
+        padding-bottom: 30px;
+    }
+    .footer-ul{
+        display: flex;
+        flex-direction: column;
+        gap: 24px;
+    }
+    .footer-ul2{
+        display: flex;
+        flex-direction: column;
+        gap: 24px;
+    }
+    .f-div2{
+        background-color: var(--color--light--black);
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .alicadzev2{
+        padding-top: 10px;
+        height: 100%;
+        width: 100%;
+    }
+    .footer-p2{
+        padding-top: 13px;
+        padding-bottom: 10px;
+        color: var(--text--grey);
+        margin: 0px;
     }
 }    
